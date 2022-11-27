@@ -1033,7 +1033,7 @@
     core-js-pure "^3.25.1"
     regenerator-runtime "^0.13.10"
 
-"@babel/runtime@^7.10.2", "@babel/runtime@^7.11.2", "@babel/runtime@^7.12.5", "@babel/runtime@^7.16.3", "@babel/runtime@^7.18.9", "@babel/runtime@^7.8.4", "@babel/runtime@^7.9.2":
+"@babel/runtime@^7.0.0", "@babel/runtime@^7.10.2", "@babel/runtime@^7.11.2", "@babel/runtime@^7.12.5", "@babel/runtime@^7.16.3", "@babel/runtime@^7.18.9", "@babel/runtime@^7.8.4", "@babel/runtime@^7.9.2":
   version "7.20.1"
   resolved "https://registry.yarnpkg.com/@babel/runtime/-/runtime-7.20.1.tgz#1148bb33ab252b165a06698fde7576092a78b4a9"
   integrity sha512-mrzLkl6U9YLF8qpqI7TB82PESyEGjm/0Ly91jG575eVxMMlb8fYfOXFZIJ8XfLrJZQbm7dlKry2bJmXBUEkdFg==
@@ -2648,6 +2648,15 @@ axe-core@^4.4.3:
   version "4.5.2"
   resolved "https://registry.yarnpkg.com/axe-core/-/axe-core-4.5.2.tgz#823fdf491ff717ac3c58a52631d4206930c1d9f7"
   integrity sha512-u2MVsXfew5HBvjsczCv+xlwdNnB1oQR9HlAcsejZttNjKKSkeDNVwB1vMThIUIFI9GoT57Vtk8iQLwqOfAkboA==
+
+axios@^1.2.0:
+  version "1.2.0"
+  resolved "https://registry.yarnpkg.com/axios/-/axios-1.2.0.tgz#1cb65bd75162c70e9f8d118a905126c4a201d383"
+  integrity sha512-zT7wZyNYu3N5Bu0wuZ6QccIf93Qk1eV8LOewxgjOZFd2DenOs98cJ7+Y6703d0wkaXGY6/nZd4EweJaHz9uzQw==
+  dependencies:
+    follow-redirects "^1.15.0"
+    form-data "^4.0.0"
+    proxy-from-env "^1.1.0"
 
 axobject-query@^2.2.0:
   version "2.2.0"
@@ -4434,7 +4443,7 @@ flatted@^3.1.0:
   resolved "https://registry.yarnpkg.com/flatted/-/flatted-3.2.7.tgz#609f39207cb614b89d0765b477cb2d437fbf9787"
   integrity sha512-5nqDSxl8nn5BSNxyR3n4I6eDmbolI6WT+QqR547RwxQapgjQBmtktdP+HTBb/a/zLsbzERTONyUB5pefh5TtjQ==
 
-follow-redirects@^1.0.0:
+follow-redirects@^1.0.0, follow-redirects@^1.15.0:
   version "1.15.2"
   resolved "https://registry.yarnpkg.com/follow-redirects/-/follow-redirects-1.15.2.tgz#b460864144ba63f2681096f274c4e57026da2c13"
   integrity sha512-VQLG33o04KaQ8uYi2tVNbdrWp1QWxNNea+nmIB4EVM28v0hmP17z7aG1+wAkNzVq4KeXTq3221ye5qTJP91JwA==
@@ -4469,6 +4478,15 @@ form-data@^3.0.0:
   version "3.0.1"
   resolved "https://registry.yarnpkg.com/form-data/-/form-data-3.0.1.tgz#ebd53791b78356a99af9a300d4282c4d5eb9755f"
   integrity sha512-RHkBKtLWUVwd7SqRIvCZMEvAMoGUp0XU+seQiZejj0COz3RI3hWP4sCv3gZWWLjJTd7rGwcsF5eKZGii0r/hbg==
+  dependencies:
+    asynckit "^0.4.0"
+    combined-stream "^1.0.8"
+    mime-types "^2.1.12"
+
+form-data@^4.0.0:
+  version "4.0.0"
+  resolved "https://registry.yarnpkg.com/form-data/-/form-data-4.0.0.tgz#93919daeaf361ee529584b9b31664dc12c9fa452"
+  integrity sha512-ETEklSGi5t0QMZuiXoA/Q6vcnxcLQP5vdugSpuAyi6SVGi2clPPp+xgEhuMaHC+zGgn31Kd235W35f7Hykkaww==
   dependencies:
     asynckit "^0.4.0"
     combined-stream "^1.0.8"
@@ -6130,6 +6148,11 @@ memfs@^3.1.2, memfs@^3.4.3:
   dependencies:
     fs-monkey "^1.0.3"
 
+"memoize-one@>=3.1.1 <6":
+  version "5.2.1"
+  resolved "https://registry.yarnpkg.com/memoize-one/-/memoize-one-5.2.1.tgz#8337aa3c4335581839ec01c3d594090cebe8f00e"
+  integrity sha512-zYiwtZUcYyXKo/np96AGZAckk+FWWsUdJ3cHGGmld7+AhvcWmQyGCYUh1hc4Q/pkOhb65dQR/pqCyK0cOaHz4Q==
+
 merge-descriptors@1.0.1:
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/merge-descriptors/-/merge-descriptors-1.0.1.tgz#b00aaa556dd8b44568150ec9d1b953f3f90cbb61"
@@ -7195,7 +7218,7 @@ postcss@^7.0.35:
     picocolors "^0.2.1"
     source-map "^0.6.1"
 
-postcss@^8.3.5, postcss@^8.4.18, postcss@^8.4.4:
+postcss@^8.3.5, postcss@^8.4.18, postcss@^8.4.19, postcss@^8.4.4:
   version "8.4.19"
   resolved "https://registry.yarnpkg.com/postcss/-/postcss-8.4.19.tgz#61178e2add236b17351897c8bcc0b4c8ecab56fc"
   integrity sha512-h+pbPsyhlYj6N2ozBmHhHrs9DzGmbaarbLvWipMRO7RLS+v4onj26MPFXA5OBYFxyqYhUJK456SwDcY9H2/zsA==
@@ -7291,6 +7314,11 @@ proxy-addr@~2.0.7:
   dependencies:
     forwarded "0.2.0"
     ipaddr.js "1.9.1"
+
+proxy-from-env@^1.1.0:
+  version "1.1.0"
+  resolved "https://registry.yarnpkg.com/proxy-from-env/-/proxy-from-env-1.1.0.tgz#e102f16ca355424865755d2c9e8ea4f24d58c3e2"
+  integrity sha512-D+zkORCbA9f1tdWRK0RaCR3GPv50cMxcrz4X8k5LTSUD1Dkw47mKJEZQNunItRTkWwgtaUSo1RVFRIG9ZXiFYg==
 
 psl@^1.1.33:
   version "1.9.0"
@@ -7487,6 +7515,19 @@ react-scripts@5.0.1:
     workbox-webpack-plugin "^6.4.1"
   optionalDependencies:
     fsevents "^2.3.2"
+
+react-virtualized-auto-sizer@^1.0.7:
+  version "1.0.7"
+  resolved "https://registry.yarnpkg.com/react-virtualized-auto-sizer/-/react-virtualized-auto-sizer-1.0.7.tgz#bfb8414698ad1597912473de3e2e5f82180c1195"
+  integrity sha512-Mxi6lwOmjwIjC1X4gABXMJcKHsOo0xWl3E3ugOgufB8GJU+MqrtY35aBuvCYv/razQ1Vbp7h1gWJjGjoNN5pmA==
+
+react-window@^1.8.8:
+  version "1.8.8"
+  resolved "https://registry.yarnpkg.com/react-window/-/react-window-1.8.8.tgz#1b52919f009ddf91970cbdb2050a6c7be44df243"
+  integrity sha512-D4IiBeRtGXziZ1n0XklnFGu7h9gU684zepqyKzgPNzrsrk7xOCxni+TCckjg2Nr/DiaEEGVVmnhYSlT2rB47dQ==
+  dependencies:
+    "@babel/runtime" "^7.0.0"
+    memoize-one ">=3.1.1 <6"
 
 react@^18.2.0:
   version "18.2.0"
@@ -8298,7 +8339,7 @@ symbol-tree@^3.2.4:
   resolved "https://registry.yarnpkg.com/symbol-tree/-/symbol-tree-3.2.4.tgz#430637d248ba77e078883951fb9aa0eed7c63fa2"
   integrity sha512-9QNk5KwDF+Bvz+PyObkmSYjI5ksVUYtjW7AU22r2NKcfLJcXp96hkDWU3+XndOsUb+AQ9QhfzfCT2O+CNWT5Tw==
 
-tailwindcss@^3.0.2:
+tailwindcss@^3.0.2, tailwindcss@^3.2.4:
   version "3.2.4"
   resolved "https://registry.yarnpkg.com/tailwindcss/-/tailwindcss-3.2.4.tgz#afe3477e7a19f3ceafb48e4b083e292ce0dc0250"
   integrity sha512-AhwtHCKMtR71JgeYDaswmZXhPcW9iuI9Sp2LvZPo9upDZ7231ZJ7eA9RaURbhpXGVlrjX4cFNlB4ieTetEb7hQ==
